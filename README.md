@@ -18,3 +18,10 @@ Configure the Content Editor webpart to use the corresponding header-file from t
 
 Configure the Search Results webpart to use the query "Path:{searchboxquery}" and configure the Display Templates section to use one of the uploaded display templates, corresponding to the used header-file in the Content Editor webpart.
 
+<img src="https://github.com/OlafD/Simple-SharePoint-Metrics/blob/master/img/Configure%20Display%20Template.PNG" />
+
+Save the wiki page, enter a site url in the search box and click the search icon. This will show the results for this site and the content below the entered web address.
+
+<img src="https://github.com/OlafD/Simple-SharePoint-Metrics/blob/master/img/Sample.PNG" />
+
+By configuring the Search Results webpart with additional query settings, it is possible to limit the search results. For example to show just the usage of the Site Pages.
