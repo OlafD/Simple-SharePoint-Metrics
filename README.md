@@ -25,3 +25,8 @@ Save the wiki page, enter a site url in the search box and click the search icon
 <img src="https://github.com/OlafD/Simple-SharePoint-Metrics/blob/master/img/Sample.PNG" />
 
 By configuring the Search Results webpart with additional query settings, it is possible to limit the search results. For example to show just the usage of the Site Pages.
+
+The prepared display templates and header scripts can show
+- lifetime visits and recent visits
+- visits of the last 7 days
+- visits of the lat 3 months
