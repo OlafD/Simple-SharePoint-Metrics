@@ -1,0 +1,102 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"> 
+<head>
+<title>ViewsMonths SharePoint Metrics Item</title>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:TemplateHidden msdt:dt="string">0</mso:TemplateHidden>
+<mso:MasterPageDescription msdt:dt="string">Displays the default result item template.</mso:MasterPageDescription>
+<mso:ContentTypeId msdt:dt="string">0x0101002039C03B61C64EC4A04F5361F385106603</mso:ContentTypeId>
+<mso:TargetControlType msdt:dt="string">;#SearchResults;#</mso:TargetControlType>
+<mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
+<mso:ManagedPropertyMapping msdt:dt="string">'Title':'Title','Path':'Path','ViewCountLifetime':'ViewCountLifetime','ViewsLifeTime':'ViewsLifeTime','ViewsLifeTimeUniqueUsers':'ViewsLifeTimeUniqueUsers','ViewsRecent':'ViewsRecent','ViewsRecentUniqueUsers':'ViewsRecentUniqueUsers','ViewsLast1Days':'ViewsLast1Days','ViewsLast1DaysUniqueUsers':'ViewsLast1DaysUniqueUsers','ViewsLast2Days':'ViewsLast2Days','ViewsLast2DaysUniqueUsers':'ViewsLast2DaysUniqueUsers','ViewsLast3Days':'ViewsLast3Days','ViewsLast3DaysUniqueUsers':'ViewsLast3DaysUniqueUsers','ViewsLast4Days':'ViewsLast4Days','ViewsLast4DaysUniqueUsers':'ViewsLast4DaysUniqueUsers','ViewsLast5Days':'ViewsLast5Days','ViewsLast5DaysUniqueUsers':'ViewsLast5DaysUniqueUsers','ViewsLast6Days':'ViewsLast6Days','ViewsLast6DaysUniqueUsers':'ViewsLast6DaysUniqueUsers','ViewsLast7Days':'ViewsLast7Days','ViewsLast7DaysUniqueUsers':'ViewsLast7DaysUniqueUsers','ViewsLastMonths1':'ViewsLastMonths1','ViewsLastMonths1Unique':'ViewsLastMonths1Unique','ViewsLastMonths2':'ViewsLastMonths2','ViewsLastMonths2Unique':'ViewsLastMonths2Unique','ViewsLastMonths3':'ViewsLastMonths3','ViewsLastMonths3Unique':'ViewsLastMonths3Unique'</mso:ManagedPropertyMapping>
+<mso:HtmlDesignStatusAndPreview msdt:dt="string">https://m365x454374.sharepoint.com/search/_catalogs/masterpage/Display Templates/Search/PlanB SharePoint Metrics/Item_SharePoint_Metrics.html, Conversion successful.</mso:HtmlDesignStatusAndPreview>
+<mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
+<mso:CrawlerXSLFile msdt:dt="string"></mso:CrawlerXSLFile>
+<mso:HtmlDesignPreviewUrl msdt:dt="string"></mso:HtmlDesignPreviewUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <div id="Item_Default">
+<!--#_ 
+        if(!$isNull(ctx.CurrentItem) && !$isNull(ctx.ClientControl)){
+            var id = ctx.ClientControl.get_nextUniqueId();
+            var itemId = id + Srch.U.Ids.item;
+			var hoverId = id + Srch.U.Ids.hover;
+			var hoverUrl = "~sitecollection/_catalogs/masterpage/Display Templates/Search/Item_Default_HoverPanel.js";
+            $setResultItem(itemId, ctx.CurrentItem);
+			if(ctx.CurrentItem.IsContainer){
+				ctx.CurrentItem.csr_Icon = Srch.U.getFolderIconUrl();
+			}
+			ctx.currentItem_ShowHoverPanelCallback = Srch.U.getShowHoverPanelCallback(itemId, hoverId, hoverUrl);
+            ctx.currentItem_HideHoverPanelCallback = Srch.U.getHideHoverPanelCallback();
+			
+			var path = ctx.CurrentItem.Path;
+			var title = ctx.CurrentItem.Title;
+
+			var viewCountLifetime = ctx.CurrentItem.ViewCountLifetime;
+
+			var viewsLast1Days = ctx.CurrentItem.ViewsLast1Days;
+			var viewsLast1DaysUniqueUsers = ctx.CurrentItem.ViewsLast1DaysUniqueUsers;
+			var viewsLast2Days = ctx.CurrentItem.ViewsLast2Days;
+			var viewsLast2DaysUniqueUsers = ctx.CurrentItem.ViewsLast2DaysUniqueUsers;
+			var viewsLast3Days = ctx.CurrentItem.ViewsLast3Days;
+			var viewsLast3DaysUniqueUsers = ctx.CurrentItem.ViewsLast3DaysUniqueUsers;
+			var viewsLast4Days = ctx.CurrentItem.ViewsLast4Days;
+			var viewsLast4DaysUniqueUsers = ctx.CurrentItem.ViewsLast4DaysUniqueUsers;
+			var viewsLast5Days = ctx.CurrentItem.ViewsLast5Days;
+			var viewsLast5DaysUniqueUsers = ctx.CurrentItem.ViewsLast5DaysUniqueUsers;
+			var viewsLast6Days = ctx.CurrentItem.ViewsLast6Days;
+			var viewsLast6DaysUniqueUsers = ctx.CurrentItem.ViewsLast6DaysUniqueUsers;
+			var viewsLast7Days = ctx.CurrentItem.ViewsLast7Days;
+			var viewsLast7DaysUniqueUsers = ctx.CurrentItem.ViewsLast7DaysUniqueUsers;
+
+			var viewsLastMonths1 = ctx.CurrentItem.ViewsLastMonths1;
+			var viewsLastMonths1Unique = ctx.CurrentItem.ViewsLastMonths1Unique;
+			var viewsLastMonths2 = ctx.CurrentItem.ViewsLastMonths2;
+			var viewsLastMonths2Unique = ctx.CurrentItem.ViewsLastMonths2Unique;
+			var viewsLastMonths3 = ctx.CurrentItem.ViewsLastMonths3;
+			var viewsLastMonths3Unique = ctx.CurrentItem.ViewsLastMonths3Unique;
+			
+			var viewsLifetime = ctx.CurrentItem.ViewsLifeTime;
+			var viewsLifetimeUniqueUsers = ctx.CurrentItem.ViewsLifeTimeUniqueUsers;
+			var viewsRecent = ctx.CurrentItem.ViewsRecent;
+			var viewsRecentUniqueUsers = ctx.CurrentItem.ViewsRecentUniqueUsers;
+_#-->
+            <div id="_#= $htmlEncode(itemId) =#_" name="Item" data-displaytemplate="ViewsMonthsSharePointMetricsItem" class="ms-srch-item" onmouseover="_#= ctx.currentItem_ShowHoverPanelCallback =#_" onmouseout="_#= ctx.currentItem_HideHoverPanelCallback =#_">
+				<table border="0" style='width: 1100px'>
+					<tr>
+						<td style="width: 700px; padding: 5px;">
+							_#= path =#_
+						</td>
+						<td style="width: 250px; padding: 5px;">
+							_#= title =#_
+						</td>
+						<td style="width: 25px; padding: 5px;">
+							_#= viewsLastMonths1 =#_
+						</td>
+						<td style="width: 25px; padding: 5px;">
+							_#= viewsLastMonths1Unique =#_
+						</td>
+						<td style="width: 25px; padding: 5px;">
+							_#= viewsLastMonths2 =#_
+						</td>
+						<td style="width: 25px; padding: 5px;">
+							_#= viewsLastMonths2Unique =#_
+						</td>
+						<td style="width: 25px; padding: 5px;">
+							_#= viewsLastMonths3 =#_
+						</td>
+						<td style="width: 25px; padding: 5px;">
+							_#= viewsLastMonths3Unique =#_
+						</td>
+					</tr>
+				</table>
+            </div>
+<!--#_ 
+        } 
+_#-->
+    </div>
+</body>
+</html>

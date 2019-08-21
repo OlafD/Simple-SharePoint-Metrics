@@ -1,0 +1,72 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"> 
+<head>
+<title>ViewsRecent SharePoint Metrics Item</title>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:TemplateHidden msdt:dt="string">0</mso:TemplateHidden>
+<mso:MasterPageDescription msdt:dt="string">Displays the default result item template.</mso:MasterPageDescription>
+<mso:ContentTypeId msdt:dt="string">0x0101002039C03B61C64EC4A04F5361F385106603</mso:ContentTypeId>
+<mso:TargetControlType msdt:dt="string">;#SearchResults;#</mso:TargetControlType>
+<mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
+<mso:ManagedPropertyMapping msdt:dt="string">'Title':'Title','Path':'Path','ViewCountLifetime':'ViewCountLifetime','ViewsLifeTime':'ViewsLifeTime','ViewsLifeTimeUniqueUsers':'ViewsLifeTimeUniqueUsers','ViewsRecent':'ViewsRecent','ViewsRecentUniqueUsers':'ViewsRecentUniqueUsers'</mso:ManagedPropertyMapping>
+<mso:HtmlDesignStatusAndPreview msdt:dt="string">https://m365x454374.sharepoint.com/search/_catalogs/masterpage/Display Templates/Search/PlanB SharePoint Metrics/Item_SharePoint_Metrics.html, Conversion successful.</mso:HtmlDesignStatusAndPreview>
+<mso:HtmlDesignConversionSucceeded msdt:dt="string">True</mso:HtmlDesignConversionSucceeded>
+<mso:CrawlerXSLFile msdt:dt="string"></mso:CrawlerXSLFile>
+<mso:HtmlDesignPreviewUrl msdt:dt="string"></mso:HtmlDesignPreviewUrl>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+<body>
+    <div id="Item_Default">
+<!--#_ 
+        if(!$isNull(ctx.CurrentItem) && !$isNull(ctx.ClientControl)){
+            var id = ctx.ClientControl.get_nextUniqueId();
+            var itemId = id + Srch.U.Ids.item;
+			var hoverId = id + Srch.U.Ids.hover;
+			var hoverUrl = "~sitecollection/_catalogs/masterpage/Display Templates/Search/Item_Default_HoverPanel.js";
+            $setResultItem(itemId, ctx.CurrentItem);
+			if(ctx.CurrentItem.IsContainer){
+				ctx.CurrentItem.csr_Icon = Srch.U.getFolderIconUrl();
+			}
+			ctx.currentItem_ShowHoverPanelCallback = Srch.U.getShowHoverPanelCallback(itemId, hoverId, hoverUrl);
+            ctx.currentItem_HideHoverPanelCallback = Srch.U.getHideHoverPanelCallback();
+			
+			var path = ctx.CurrentItem.Path;
+			var title = ctx.CurrentItem.Title;
+			var viewCountLifetime = ctx.CurrentItem.ViewCountLifetime;
+			var viewsLifetime = ctx.CurrentItem.ViewsLifeTime;
+			var viewsLifetimeUniqueUsers = ctx.CurrentItem.ViewsLifeTimeUniqueUsers;
+			var viewsRecent = ctx.CurrentItem.ViewsRecent;
+			var viewsRecentUniqueUsers = ctx.CurrentItem.ViewsRecentUniqueUsers;
+_#-->
+            <div id="_#= $htmlEncode(itemId) =#_" name="Item" data-displaytemplate="ViewsRecentSharePointMetricsItem" class="ms-srch-item" onmouseover="_#= ctx.currentItem_ShowHoverPanelCallback =#_" onmouseout="_#= ctx.currentItem_HideHoverPanelCallback =#_">
+				<table border="0" style='width: 1150px'>
+					<tr>
+						<td style="width: 700px; padding: 5px; vertical-align: text-top; overflow: hidden;">
+							_#= path =#_
+						</td>
+						<td style="width: 250px; padding: 5px; vertical-align: text-top; overflow: hidden;">
+							_#= title =#_
+						</td>
+						<td style="width: 50px; padding: 5px; vertical-align: text-top; overflow: hidden;">
+							_#= viewsLifetime =#_
+						</td>
+						<td style="width: 50px; padding: 5px; vertical-align: text-top; overflow: hidden;">
+							_#= viewsLifetimeUniqueUsers =#_
+						</td>
+						<td style="width: 50px; padding: 5px; vertical-align: text-top; overflow: hidden;">
+							_#= viewsRecent =#_
+						</td>
+						<td style="width: 50px; padding: 5px; vertical-align: text-top; overflow: hidden;">
+							_#= viewsRecentUniqueUsers =#_
+						</td>
+					</tr>
+				</table>
+            </div>
+<!--#_ 
+        } 
+_#-->
+    </div>
+</body>
+</html>
